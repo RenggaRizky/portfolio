@@ -13,12 +13,12 @@ import { useRouter } from "next/router";
 export default function Home() {
     const router = useRouter();
 
-    useEffect(() => {
-        window.onresize = () => {
-            router.push("/");
-            window.location.reload();
-        };
-    }, []);
+    // useEffect(() => {
+    //     window.onresize = () => {
+    //         router.push("/");
+    //         window.location.reload();
+    //     };
+    // }, []);
 
     return (
         <div className={styles.container}>
