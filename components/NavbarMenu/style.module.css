@@ -1,0 +1,7 @@
+.navbar {
+    @apply xl:py-10 px-4 xl:max-w-7xl xl:mx-auto;
+}
+
+.navbar > div {
+    @apply justify-between;
+}
