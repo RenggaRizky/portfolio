@@ -52,15 +52,15 @@ export default function Projects() {
         img: [
             {
                 src: "img/project-2-1.png",
-                alt: "Web Pendataan Kasus COVID 19",
+                alt: "Hero Web Pendataan Kasus COVID 19",
             },
             {
                 src: "img/project-2-2.png",
-                alt: "Web Pendataan Kasus COVID 19",
+                alt: "Informasi Kasus COVID 19",
             },
             {
                 src: "img/project-2-3.png",
-                alt: "Web Pendataan Kasus COVID 19",
+                alt: "Hasil Pencarian Kasus COVID 19",
             },
         ],
         appDesc:
@@ -107,19 +107,17 @@ export default function Projects() {
 
                 <div className="flex flex-col justify-center items-center gap-y-4 sm:flex-row sm:gap-y-0 sm:gap-x-4 sm:items-stretch sm:justify-evenly sm:px-5 lg:justify-center xl:justify-start">
                     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md ">
-                        <a href="#">
+                        <div>
                             <img
                                 className="rounded-t-lg sm:w-full"
                                 src="img/project-1-1.svg"
                                 alt=""
                             />
-                        </a>
+                        </div>
                         <div className="p-5 sm:flex sm:justify-between sm:flex-col sm:text-xs">
-                            <a href="#">
-                                <h5 className="text-lg font-bold tracking-tight text-darkblue mb-4 leading-5 sm:text-base sm:mb-2 md:text-lg">
-                                    Sistem Informasi Manajemen Inventory
-                                </h5>
-                            </a>
+                            <h5 className="text-lg font-bold tracking-tight text-darkblue mb-4 leading-5 sm:text-base sm:mb-2 md:text-lg">
+                                Sistem Informasi Manajemen Inventory
+                            </h5>
                             <p className="mb-10 font-normal text-xs  uppercase text-slate-400 sm:text-[0.625rem] xl:text-xs">
                                 toko aly jaya ciomas
                             </p>
@@ -130,19 +128,17 @@ export default function Projects() {
                     </div>
 
                     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md ">
-                        <a href="#">
+                        <div>
                             <img
                                 className="rounded-t-lg sm:bg-cover"
                                 src="img/project-2.svg"
                                 alt=""
                             />
-                        </a>
+                        </div>
                         <div className="p-5 sm:flex sm:justify-between sm:flex-col sm:text-xs">
-                            <a href="#">
-                                <h5 className="mb-2 text-lg font-bold tracking-tight text-darkblue leading-5 sm:text-base sm:mb-2 md:mb-10 md:text-lg">
-                                    Web Pendataan Kasus COVID 19
-                                </h5>
-                            </a>
+                            <h5 className="mb-2 text-lg font-bold tracking-tight text-darkblue leading-5 sm:text-base sm:mb-2 md:mb-10 md:text-lg">
+                                Web Pendataan Kasus COVID 19
+                            </h5>
                             <p className="mb-10 font-normal text-xs  uppercase text-slate-400 sm:mb-[4.5rem] sm:flex sm:justify-between sm:flex-col sm:text-xs xl:text-xs"></p>
                             <ModalBtn onClick={project2}>
                                 Lihat Selengkapnya

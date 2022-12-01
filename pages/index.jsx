@@ -6,27 +6,20 @@ import Hero from "../components/Hero";
 import Navbar from "../components/NavbarMenu";
 import Projects from "../components/Projects";
 import Tools from "../components/Tools";
-import styles from "../styles/Home.module.css";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
+import Footer from "../components/Footer";
 
 export default function Home() {
-    const router = useRouter();
-
-    // useEffect(() => {
-    //     window.onresize = () => {
-    //         router.push("/");
-    //         window.location.reload();
-    //     };
-    // }, []);
-
     return (
-        <div className={styles.container}>
+        <>
             <Head>
                 <title>Portofolio | Rengga Rizky Septian</title>
                 <meta
                     name="description"
                     content="Selamat datang di portofolio milik Rengga Rizky Septian 👋"
+                />
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
                 />
                 <link rel="icon" href="/favicon.png" />
             </Head>
@@ -43,6 +36,7 @@ export default function Home() {
                 <Projects />
                 <Contact />
             </main>
-        </div>
+            <Footer />
+        </>
     );
 }

@@ -30,7 +30,7 @@ export default function Tools() {
                 </div>
                 <div className="sm:basis-1/2 sm:self-center sm:py-8 lg:py-12">
                     <p className="uppercase text-primary font-bold text-sm lg:text-base">
-                        Tools
+                        Tools & Skills
                     </p>
 
                     <h2 className="text-darkblue font-bold text-xl mb-8 sm:text-2xl sm:text-white lg:text-3xl lg:mb-10">

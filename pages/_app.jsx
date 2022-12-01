@@ -5,11 +5,11 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <Head>
+                <link rel="icon" href="/favicon.png" />
                 <meta
                     name="viewport"
-                    content="width=device-width, initial-scale=1.0"
+                    content="initial-scale=1.0, width=device-width"
                 />
-                <link rel="icon" href="/favicon.png" />
             </Head>
             <Component {...pageProps} />
         </>

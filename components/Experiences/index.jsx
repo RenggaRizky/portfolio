@@ -49,7 +49,7 @@ export default function Experiences() {
 
     return (
         <section
-            className="container px-4 mb-16 lg:max-w-5xl xl:max-w-7xl lg:mx-auto pt-4 lg:pt-8"
+            className="container px-4 mb-16 lg:max-w-5xl xl:max-w-7xl mx-auto pt-4 lg:pt-8"
             id="experiences"
         >
             <p className="uppercase text-primary font-bold text-sm lg:text-base ">

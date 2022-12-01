@@ -31,9 +31,9 @@ export default function ModalCard({ onClose, dataProject }) {
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <path
-                                    fill-rule="evenodd"
+                                    fillRule="evenodd"
                                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"
+                                    clipRule="evenodd"
                                 ></path>
                             </svg>
                         </button>
@@ -70,20 +70,11 @@ export default function ModalCard({ onClose, dataProject }) {
                         </div>
 
                         <div className="">
-                            {/* <div className="hidden xl:block">
-                                <h5 className="text-xl font-bold tracking-tight text-darkblue md:text-2xl lg:text-3xl lg:mb-4">
-                                    {dataProject.title}
-                                </h5>
-                                <p className="mb-10 font-normal text-xs text-primary uppercase sm:text-base">
-                                    {dataProject.company}
-                                </p>
-                            </div> */}
-
-                            <p className="font-normal text-sm text-slate-400 text-justify mb-2 md:text-base">
+                            <p className="font-normal text-xs text-slate-400 text-left mb-2 md:text-sm">
                                 {dataProject.appDesc}
                             </p>
 
-                            <p className="font-normal text-sm text-slate-400 text-justify md:text-base">
+                            <p className="font-normal text-xs text-slate-400 text-left md:text-sm">
                                 {dataProject.toolsDesc}
                             </p>
 
@@ -92,7 +83,7 @@ export default function ModalCard({ onClose, dataProject }) {
                                     return (
                                         <li
                                             key={data}
-                                            className="font-normal text-sm text-slate-400 md:text-base"
+                                            className="font-normal text-xs text-slate-400 md:text-sm"
                                         >
                                             {data}
                                         </li>
