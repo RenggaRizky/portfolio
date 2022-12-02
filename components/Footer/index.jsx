@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <footer class="font-poppins container border-t border-solid border-slate-200 mt-36 mb-10 px-4 pt-4 md:pt-8 xl:pt-12  sm:mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl md:flex md:justify-between md:items-center">
+        <footer className="font-poppins container border-t border-solid border-slate-200 mt-36 mb-10 px-4 pt-4 md:pt-8 xl:pt-12  sm:mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl md:flex md:justify-between md:items-center">
             <Link
                 href="/"
                 className="flex text-primary gap-x-4 items-center justify-center md:justify-start"
@@ -16,11 +16,11 @@ export default function Footer() {
                     Rengga Rizky <span className="block">Septian</span>
                 </h2>
             </Link>
-            <ul class="flex flex-wrap items-center mt-8 text-sm text-gray-500 justify-center md:mt-0">
+            <ul className="flex flex-wrap items-center mt-8 text-sm text-gray-500 justify-center md:mt-0">
                 <li>
                     <a
                         href="#experiences"
-                        class="mr-4 hover:underline md:mr-6 "
+                        className="mr-4 hover:underline md:mr-6 "
                     >
                         Experiences
                     </a>
@@ -28,18 +28,21 @@ export default function Footer() {
                 <li>
                     <a
                         href="#tools-and-skills"
-                        class="mr-4 hover:underline md:mr-6"
+                        className="mr-4 hover:underline md:mr-6"
                     >
                         Tools & Skills
                     </a>
                 </li>
                 <li>
-                    <a href="#projects" class="mr-4 hover:underline md:mr-6">
+                    <a
+                        href="#projects"
+                        className="mr-4 hover:underline md:mr-6"
+                    >
                         Projects
                     </a>
                 </li>
                 <li>
-                    <a href="#contact" class="hover:underline">
+                    <a href="#contact" className="hover:underline">
                         Contact
                     </a>
                 </li>

@@ -7,8 +7,15 @@ import Navbar from "../components/NavbarMenu";
 import Projects from "../components/Projects";
 import Tools from "../components/Tools";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 export default function Home() {
+    useEffect(() => {
+        window.onresize = () => {
+            window.location.reload();
+        };
+    }, []);
+
     return (
         <>
             <Head>
@@ -24,7 +31,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.png" />
             </Head>
 
-            <main className="font-poppins">
+            <main className="font-poppins overflow-x-hidden">
                 <Script
                     src="https://kit.fontawesome.com/d8beacd362.js"
                     crossorigin="anonymous"

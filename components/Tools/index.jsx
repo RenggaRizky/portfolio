@@ -18,10 +18,10 @@ export default function Tools() {
 
     return (
         <section
-            className="sm:mx-auto sm:max-w-2xl sm:px-4 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl pt-4 lg:pt-8"
+            className="mx-auto sm:max-w-2xl sm:px-4 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl pt-4 lg:pt-8"
             id="tools-and-skills"
         >
-            <div className="container px-4 mb-16 sm:flex sm:bg-gradient-to-r from-darkblue to-secondary sm:rounded-xl sm:justify-between sm:gap-x-8 sm:shadow-lg md:gap-x-10 lg:px-14">
+            <div className="mx-auto container px-4 mb-16 sm:flex sm:bg-gradient-to-r from-darkblue to-secondary sm:rounded-xl sm:justify-between sm:gap-x-8 sm:shadow-lg md:gap-x-10 lg:px-14">
                 <div className="sm:w-full sm:basis-1/2 sm:self-end">
                     <img
                         src="img/tools.png"
@@ -37,15 +37,17 @@ export default function Tools() {
                         Terus bisa apa aja??..
                     </h2>
 
-                    <div className="flex justify-center mb-16 sm:hidden">
+                    {/* <div className="flex justify-center mb-16 sm:hidden"> */}
+                    <div className="mb-16 sm:hidden">
                         <img
-                            src="img/tools-m.svg"
+                            src="img/tools-m.png"
                             alt="tools"
-                            className="w-full"
+                            className="w-fit"
                         />
                     </div>
 
-                    <div className="grid grid-cols-4 gap-4  w-full place-content-between sm:gap-5">
+                    {/* <div className="grid grid-cols-4 gap-4  w-full place-content-between sm:gap-5"> */}
+                    <div className="grid grid-cols-4 gap-4  w-full  sm:gap-5">
                         {logo.map((data) => {
                             return (
                                 <Tooltip

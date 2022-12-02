@@ -5,7 +5,12 @@ import styles from "./style.module.css";
 
 export default function NavbarMenu() {
     return (
-        <Navbar fluid={true} rounded={true} className={styles.navbar}>
+        <Navbar
+            fluid={false}
+            rounded={true}
+            className="xl:py-10 px-4 xl:max-w-7xl xl:mx-auto"
+        >
+            {/* <Navbar fluid={true} rounded={true} className={styles.navbar}> */}
             <Navbar.Brand href="#">
                 <img
                     src="icon/logo.svg"
