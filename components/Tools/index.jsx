@@ -6,12 +6,12 @@ export default function Tools() {
         { src: "img/html.png", desc: "HTML" },
         { src: "img/css.png", desc: "CSS" },
         { src: "img/js.png", desc: "JavaScript" },
-        { src: "img/sass.png", desc: "SASS / SCSS" },
+        { src: "img/sass.png", desc: "SASS" },
         { src: "img/bootstrap.png", desc: "Bootstrap" },
         { src: "img/tailwind.svg", desc: "Tailwind" },
         { src: "img/react.png", desc: "ReactJS" },
         { src: "img/nextjs.svg", desc: "NextJS" },
-        { src: "img/mongodb.png", desc: "MongoDB" },
+        { src: "img/mongodb.svg", desc: "MongoDB" },
         { src: "img/figma.png", desc: "Figma" },
         { src: "img/github.png", desc: "Github" },
     ];
@@ -37,7 +37,6 @@ export default function Tools() {
                         Terus bisa apa aja??..
                     </h2>
 
-                    {/* <div className="flex justify-center mb-16 sm:hidden"> */}
                     <div className="mb-16 sm:hidden">
                         <img
                             src="img/tools-m.png"
@@ -46,25 +45,24 @@ export default function Tools() {
                         />
                     </div>
 
-                    {/* <div className="grid grid-cols-4 gap-4  w-full place-content-between sm:gap-5"> */}
-                    <div className="grid grid-cols-4 gap-4  w-full  sm:gap-5">
+                    <div className="grid grid-cols-4 gap-4  w-full place-content-between sm:gap-2 md:gap-4">
                         {logo.map((data) => {
                             return (
-                                <Tooltip
+                                <div
                                     key={data.src}
-                                    content={data.desc}
-                                    className=""
+                                    className="hover:scale-125 sm:hover:scale-150 md:hover:scale-110 h-20 xl:h-28  px-4 py-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 flex justify-center items-center flex-col transition-all  group  sm:px-1 sm:py-1"
                                 >
-                                    <div className="w-full h-full px-4 py-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 flex hover:scale-110 transition-all justify-center items-center group delay-100 ease-in-out sm:px-2 sm:py-2 lg:px-3 lg:py-5 xl:px-1">
-                                        <div className="flex  justify-center items-center">
-                                            <img
-                                                src={data.src}
-                                                alt={data.desc}
-                                                className="w-1/2 delay-100 ease-in-out sm:w-full lg:w-2/3 xl:w-1/2"
-                                            />
-                                        </div>
+                                    <div className="flex flex-col justify-between items-center gap-y-2">
+                                        <img
+                                            src={data.src}
+                                            alt={data.desc}
+                                            className="w-3/4 group-hover:scale-75  duration-200 delay-100 ease-in-out lg:w-1/2"
+                                        />
+                                        <p className="text-darkblue text-[0.625rem] xl:text-sm hidden group-hover:inline-block">
+                                            {data.desc}
+                                        </p>
                                     </div>
-                                </Tooltip>
+                                </div>
                             );
                         })}
                     </div>

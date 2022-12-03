@@ -10,12 +10,6 @@ import Footer from "../components/Footer";
 import { useEffect } from "react";
 
 export default function Home() {
-    useEffect(() => {
-        window.onresize = () => {
-            window.location.reload();
-        };
-    }, []);
-
     return (
         <>
             <Head>

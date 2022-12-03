@@ -31,7 +31,7 @@ export default function Contact() {
             className="sm:mx-auto sm:max-w-2xl sm:px-4 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl pt-4 lg:pt-8"
             id="contact"
         >
-            <div className="container px-4 mb-16 sm:bg-gradient-to-r from-darkblue to-secondary sm:rounded-xl sm:shadow-lg sm:flex sm:gap-x-8 sm:items-center sm:justify-between md:gap-x-10 lg:px-14 xl:text-sm">
+            <div className="container px-4 mb-16 sm:bg-gradient-to-r from-darkblue to-secondary sm:rounded-xl sm:shadow-lg sm:flex sm:gap-x-8 sm:items-center sm:justify-between  lg:px-14 xl:text-sm">
                 <div className="sm:basis-1/2">
                     <img
                         src="img/contact.svg"
@@ -61,29 +61,24 @@ export default function Contact() {
                         Untuk menghubungi bisa menekan ikon sosial media berikut
                     </p>
 
-                    <div className="grid grid-cols-4 gap-4 w-full place-content-between mb-12 sm:mb-4 lg:mb-6">
+                    <div className="grid grid-cols-4 gap-4 sm:gap-2 md:gap-4 w-full place-content-between mb-12 sm:mb-4 lg:mb-6">
                         {contactLink.map((data) => {
                             return (
-                                <Tooltip
-                                    key={data.link}
-                                    content={data.desc}
-                                    className=""
+                                <a
+                                    key={data.desc}
+                                    href={data.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="hover:scale-125 sm:hover:scale-150 md:hover:scale-110 h-20 xl:h-28  px-4 py-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 flex justify-center items-center flex-col transition-all  group  sm:px-1 sm:py-1"
                                 >
-                                    <a
-                                        href={data.link}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        className="w-full h-full px-4 py-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 flex hover:scale-110 transition-all justify-center items-center group delay-100 ease-in-out cursor-pointer sm:px-2 sm:py-4 lg:px-1 lg:py-5"
-                                    >
-                                        <div className="flex justify-center items-center">
-                                            <img
-                                                src={data.src}
-                                                alt={data.desc}
-                                                className="w-1/2 delay-100 ease-in-out sm:w-[60%] lg:w-1/2 xl:w-[45%]"
-                                            />
-                                        </div>
-                                    </a>
-                                </Tooltip>
+                                    <div className="flex justify-center items-center">
+                                        <img
+                                            src={data.src}
+                                            alt={data.desc}
+                                            className="w-3/4 group-hover:scale-90 duration-200 delay-100 ease-in-out lg:w-1/2"
+                                        />
+                                    </div>
+                                </a>
                             );
                         })}
                     </div>
