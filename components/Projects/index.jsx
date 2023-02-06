@@ -71,6 +71,35 @@ export default function Projects() {
         code: "https://github.com/RenggaRizky/web-pendataan-kasus-covid-19",
     };
 
+    const dataProject3 = {
+        title: "Moviearo  Penyedia Informasi Film & Serial TV",
+        company: "The Movie Database API",
+        img: [
+            {
+                src: "img/project-3-1.png",
+                alt: "Halaman Utama Moviearo",
+            },
+            {
+                src: "img/project-3-2.png",
+                alt: "Halaman List Film dan Serial TV",
+            },
+            {
+                src: "img/project-3-3.png",
+                alt: "Halaman Film dan Serial TV",
+            },
+            {
+                src: "img/project-3-4.png",
+                alt: "Section video",
+            },
+        ],
+        appDesc:
+            "Web yang dibuat untuk menampilkan informasi mengenai film dan serial tv di seluruh dunia dimana data yang diambil berasal dari The  Movie Database API",
+        toolsDesc:
+            "Berikut merupakan beberapa teknologi yang dipakai untuk membuat sistem: ",
+        tools: ["ReactJS", "Tailwind", "Florbite Tailwind"],
+        code: "https://moviearo.netlify.app/",
+    };
+
     const project1 = () => {
         confirmAlert({
             customUI: ({ onClose }) => {
@@ -86,6 +115,16 @@ export default function Projects() {
             customUI: ({ onClose }) => {
                 return (
                     <ModalCard onClose={onClose} dataProject={dataProject2} />
+                );
+            },
+        });
+    };
+
+    const project3 = () => {
+        confirmAlert({
+            customUI: ({ onClose }) => {
+                return (
+                    <ModalCard onClose={onClose} dataProject={dataProject3} />
                 );
             },
         });
@@ -127,7 +166,7 @@ export default function Projects() {
                         </div>
                     </div>
 
-                    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md ">
+                    {/* <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md ">
                         <div>
                             <img
                                 className="rounded-t-lg sm:bg-cover"
@@ -141,6 +180,27 @@ export default function Projects() {
                             </h5>
                             <p className="mb-10 font-normal text-xs  uppercase text-slate-400 sm:mb-[4.5rem] sm:flex sm:justify-between sm:flex-col sm:text-xs xl:text-xs"></p>
                             <ModalBtn onClick={project2}>
+                                Lihat Selengkapnya
+                            </ModalBtn>
+                        </div>
+                    </div> */}
+
+                    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md ">
+                        <div>
+                            <img
+                                className="rounded-t-lg sm:w-full"
+                                src="img/project-3-1.png"
+                                alt=""
+                            />
+                        </div>
+                        <div className="p-5 sm:flex sm:justify-between sm:flex-col sm:text-xs">
+                            <h5 className="text-lg font-bold tracking-tight text-darkblue mb-4 leading-5 sm:text-base sm:mb-2 md:text-lg">
+                                Moviearo Penyedia Informasi Film & Serial TV
+                            </h5>
+                            <p className="mb-10 font-normal text-xs  uppercase text-slate-400 sm:text-[0.625rem] xl:text-xs">
+                                The Movie Database API
+                            </p>
+                            <ModalBtn onClick={project3}>
                                 Lihat Selengkapnya
                             </ModalBtn>
                         </div>
